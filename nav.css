@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+
+/*RESPONSIVE NAV*/
+
+@media (max-width:704px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .link {
+    font-size: 13px;
+  }
+}
+
+/*NAVIGATION SECTION*/
+
+nav {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.left-side-nav {
+  margin: 1rem 2rem;
+}
+
+.starbucks-logo {
+  width: 4.3rem;
+}
+
+
+.right-side-nav {
+  margin: 1rem 2rem;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.link {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.link:hover {
+  color: rgb(0, 98, 65);
+}
+
+.link::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 98, 65);
+  ;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 98, 65);
+  border-radius: 3px;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 0.25s;
+}
+
+.link:hover::before {
+  scale: 1;
+  transform-origin: left;
+}
+
+
+/*MAIN*/
+
+.image__shop {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: none;
+}
+
+
+.intro {
+  background-color: rgba(242, 240, 235, 0.76);
+}
+
+.intro__string {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 19px;
+  color: rgb(0, 98, 65);
+  padding-top: 2.4rem;
+}
+
+
+.intro p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  line-height: 1.4rem;
+  margin-top: 1.5rem;
+}
