@@ -154,6 +154,19 @@ ul {
   padding-bottom: 4rem;
 }
 
+
+.intro__string::selection {
+  background-color: rgb(0, 98, 65);
+  color: rgb(255, 255, 255);
+}
+
+
+.intro p::selection {
+  background-color: rgb(0, 98, 65);
+  color: rgb(255, 255, 255);
+}
+
+
 /*MENU SECTION*/
 
 .menu {
