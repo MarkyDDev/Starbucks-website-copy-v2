@@ -32,7 +32,23 @@
   .img_pic {
     border-radius: 60%;
   }
+
+  .history {
+    flex-direction: column;
+  }
+
+  .who_we_are {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
 }
+
+
+
+
+
 
 /*NAVIGATION SECTION*/
 
@@ -145,8 +161,6 @@ ul {
 
 }
 
-
-
 .our__menu {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -204,10 +218,10 @@ ul {
 
 
 
-.box-coffe {
+.coffe_learn {
   position: relative;
-}
 
+}
 
 .coffe_background {
   width: 100%;
@@ -218,20 +232,100 @@ ul {
 
 .our_coffe_text {
   font-family: 'Poppins', sans-serif;
-  color: rgb(0, 98, 65);
   max-width: 40rem;
   position: absolute;
   left: 150px;
   top: 200px;
+  display: inline-block;
 }
 
 .our_coffe_text h2 {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
 }
 
 .our_coffe_text h2::selection {
   background-color: rgb(0, 98, 65);
   color: rgb(255, 255, 255);
+}
+
+.our_coffe_text p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 25px;
+  margin-bottom: 3rem;
+}
+
+.our_coffe_text p::selection {
+  background-color: rgb(0, 98, 65);
+  color: rgb(255, 255, 255);
+}
+
+
+button {
+  background-color: rgb(0, 98, 65);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  padding: 13px 23px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 200px;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  transition: 0.6s;
+}
+
+
+/*HISTORY SECTION*/
+
+.history {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem 5rem;
+  gap: 1rem;
+}
+
+.who_we_are {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.who_we_are h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.who_we_are h2::selection {
+  background-color: rgb(0, 98, 65);
+  color: rgb(255, 255, 255);
+}
+
+.who_we_are p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0;
+  max-width: 30rem;
+  min-width: 25rem;
+}
+
+.who_we_are p::selection {
+  background-color: rgb(0, 98, 65);
+  color: rgb(255, 255, 255);
+}
+
+.store_pic {
+  min-width: 10rem;
+  max-width: 40rem;
 }
