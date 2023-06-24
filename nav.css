@@ -35,6 +35,8 @@
 
   .history {
     flex-direction: column;
+    justify-content: auto;
+    align-items: center;
   }
 
   .who_we_are {
@@ -42,7 +44,7 @@
     text-align: center;
     justify-content: center;
   }
-  
+
   .menu__box {
     gap: 3rem;
   }
@@ -50,6 +52,16 @@
   .history {
     gap: 1rem;
   }
+
+  .store_pic {
+    width: 21rem;
+  }
+
+  footer li {
+    font-size: 13px
+  }
+
+  ;
 }
 
 @media (min-width:705px) {
@@ -58,8 +70,11 @@
   }
 
   .history {
-    gap: 10rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
   }
+
 }
 
 
@@ -315,9 +330,10 @@ button:hover {
 .history {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 4rem 2rem; 
+  width: 100%;
+  padding: 4rem 5rem;
 }
 
 
@@ -325,7 +341,6 @@ button:hover {
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-
 }
 
 .who_we_are h2 {
@@ -341,10 +356,10 @@ button:hover {
 
 .who_we_are p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 1rem 0;
-  max-width: 30rem;
-  min-width: 25rem;
+  max-width: 25rem;
+  min-width: 10rem;
 }
 
 .who_we_are p::selection {
@@ -353,8 +368,8 @@ button:hover {
 }
 
 .store_pic {
-  min-width: 5rem;
-  max-width: 30rem;
+  max-width: 32rem;
+  height: auto;
 }
 
 /*FOOTER*/
