@@ -42,9 +42,25 @@
     text-align: center;
     justify-content: center;
   }
+  
+  .menu__box {
+    gap: 3rem;
+  }
 
+  .history {
+    gap: 1rem;
+  }
 }
 
+@media (min-width:705px) {
+  .menu__box {
+    gap: 10rem;
+  }
+
+  .history {
+    gap: 10rem;
+  }
+}
 
 
 
@@ -190,7 +206,6 @@ ul {
 .menu__box {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
@@ -302,9 +317,9 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 4rem 2rem;
-  gap: 1rem;
+  margin: 4rem 2rem; 
 }
+
 
 .who_we_are {
   flex-wrap: wrap;
@@ -338,7 +353,7 @@ button:hover {
 }
 
 .store_pic {
-  min-width: 10rem;
+  min-width: 5rem;
   max-width: 30rem;
 }
 
@@ -365,9 +380,8 @@ footer {
 }
 
 footer li {
-  text-transform:capitalize;
+  text-transform: capitalize;
   margin-top: 2rem;
   gap: 1.45rem;
   cursor: pointer;
 }
-  
